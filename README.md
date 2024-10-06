@@ -1,3 +1,2 @@
 # Test_1
-Test_1
-### Test pentru CDL 2024
+### Test pentru CDL 2024, proiect 1
