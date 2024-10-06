@@ -3,11 +3,15 @@ using namespace std;
 
 int main() {
     int n;
+
     int cnt = 0;
+    cout << "Introduceti nr din tastatura: ";
     cin >> n;
-    if (n <= 1){
+
+    if (n <= 1) {
         cout << n << " NU este nr prim";
-    }else {
+    }
+    else {
         for (int i = 2; i * i <= n; i++) {
             if (n % i == 0)
                 cnt++;
