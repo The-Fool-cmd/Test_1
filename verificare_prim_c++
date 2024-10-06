@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main() {
@@ -7,9 +6,9 @@ int main() {
     int cnt = 0;
     cin >> n;
     if (n <= 1){
-        cout << n << " nu este nr prim" << endl; 
+        cout << n << " NU este nr prim" << endl; 
     }else {
-        for (int i = 1; i <= sqrt(n); i++) {
+        for (int i = 1; i * i <= n; i++) {
             if (n % i == 0)
                 cnt++;
         }
