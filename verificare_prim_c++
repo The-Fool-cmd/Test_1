@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int n;
+    int cnt = 0;
+    cin >> n;
+    if (n <= 1){
+        cout << n << " nu este nr prim" << endl; 
+    }else {
+        for (int i = 1; i <= sqrt(n); i++) {
+            if (n % i == 0)
+                cnt++;
+        }
+        if (cnt > 2)
+            cout << n << " NU este nr prim" << endl;
+        else
+            cout << n << " este nr prim" << endl;
+    }
+
+    return 0;
+}
